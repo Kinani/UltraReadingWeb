@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using UltraReadingWeb.Common;
+using UltraReadingWeb.Models;
 
 namespace UltraReadingWeb
 {
@@ -16,6 +18,7 @@ namespace UltraReadingWeb
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DocDBRepo<UltraReading>.Initialize();
         }
     }
 }
