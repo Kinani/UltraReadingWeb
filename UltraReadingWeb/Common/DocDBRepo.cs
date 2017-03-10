@@ -8,6 +8,7 @@ using Microsoft.Azure.Documents.Linq;
 using System.Configuration;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using UltraReadingWeb.Common;
 
 namespace UltraReadingWeb.Common
 {
@@ -77,5 +78,6 @@ namespace UltraReadingWeb.Common
 
             return results;
         }
+        
     }
 }

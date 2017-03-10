@@ -16,7 +16,7 @@ namespace UltraReadingWeb.Controllers
         public async Task<ActionResult> IndexAsync()
         {
             var items = await DocDBRepo<UltraReading>.GetItemsAsync(r => r.Reading != string.Empty);
-            return View(items);
+            return View(items.Reverse().Take(15));
         }
     }
 }
